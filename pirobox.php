@@ -8,8 +8,9 @@
   Author URI: http://www.pirolab.it/wp_pirobox/
   Version: 2
   test: test github
+  git command : git pull origin master && git add . --all && git commit -am "fix Diego" && git push origin  master
+  
  */
-
 if (!class_exists('Pirobox')) {
 
     class Pirobox {
