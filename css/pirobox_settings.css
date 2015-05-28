@@ -1,0 +1,142 @@
+.form-table td,
+.form-table th {
+    padding: 10px 10px 10px 0;
+}
+
+.color-picker-preview {
+    background-color: #cccccc;
+    height: 1.3em;
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    margin: 1px;
+    padding: 3px 1em 4px;
+    float: left; 
+}
+
+.wp-slider {
+    max-width: 200px;
+}
+.wp-slider.ui-slider-horizontal .ui-slider-range-min {
+    background-color: #2EA2CC;
+}
+
+#pirobox-form select {
+    display: none; 
+}
+
+#pirobox-form th { font-weight: 400; }
+
+
+
+.wrap { position: relative; }
+
+#pb_img_preview {
+    position: fixed;
+    width: 35%;
+    top: 52px;
+    right: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #F1F1F1;
+}
+
+#pb_img_preview p {
+    position:relative; 
+    top:0; 
+    right:0; 
+    padding: 1.5em; 
+    margin: 0px; 
+    z-index:0;
+}
+
+#pb_test_lightbox_container {
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    min-width:200px;
+    min-height:200px;
+    margin:-100px 0 0 -100px;
+    padding:0;
+    line-height:0!important;
+    z-index:2;
+}
+#pb_test_lightbox {
+    position:absolute; 
+    top:0; 
+    left:0;
+    width:200px;
+    height:auto;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    line-height:0!important;
+    z-index:2;
+    background-color: #000000;
+    border-radius: 5px;
+}
+#pb_test_lightbox img {
+    height:auto!important;
+    width:100%!important;
+    max-width:none!important;
+}
+
+.pb_meta_box .pb_elements_wrap.add_test_style {
+    position:absolute!important;
+    z-index:3;
+    bottom:0;
+    left:0;
+    margin:0!important;
+}
+#pb_test_overlay {
+    position:absolute; 
+    top:0; 
+    right:0;
+    margin:0;
+    padding:0;
+    line-height:0!important;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: #FFFFFF;
+    opacity: 0.5; 
+}
+#piro_close_fake.piro_close_fake {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+    z-index: 120011222;
+    top: -15px;
+    -webkit-border-radius: 42px;
+    -moz-border-radius: 42px;
+    border-radius: 42px;
+    margin: 0;
+    background: #000 url(http://localhost/wp_piro/wp-content/plugins/pirobox-wp/assets/css/pb_style/buttons.png) -45px -5px;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .4);
+    -webkit-transition: background-position .4s ease,background-color .8s ease;
+    display: none;
+    cursor:pointer;
+}
+#piro_close_fake.piro_close_fake:hover {
+    background-position: -45px -45px;
+}
+#restore-defaults {
+    margin-left: 25px; 
+}
+
+.range-max,
+.range-min {
+    position: absolute; 
+    left: 0px; 
+    top: 9px;
+    color: #222;
+    font-size: .8em;
+}
+
+.range-max {
+    right:0px;
+    left: auto; 
+}

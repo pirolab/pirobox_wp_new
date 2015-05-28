@@ -1,0 +1,37 @@
+#pb_shortcode_generator .title { font-size: 2em; line-height: 2em; }
+#pb_shortcode_generator table { width: 100%; }
+
+#pb_shortcode_generator a {
+    font-size: 2em;
+    height: auto;
+    line-height: 2em;
+    text-align: center;
+    width: 100%;
+}  
+
+#pb_shortcode_generator a img {
+    display: block;
+    padding-bottom: 7px;
+    margin: 0 auto;
+}
+
+#pb_shortcode_generator .title-form, 
+#pb_shortcode_generator .gallery-form, 
+#pb_shortcode_generator .slider-form, 
+#pb_shortcode_generator .carousel-form {
+    display: none; 
+}
+
+#pb_shortcode_generator .gallery-form th,
+#pb_shortcode_generator .slider-form th,
+#pb_shortcode_generator .carousel-form th {
+   min-width: 150px;
+}
+
+#pb_shortcode_generator .form-button.selected {
+      -webkit-box-shadow: inset 0 1px 0 #E7E7E7,0 1px 0 rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 #E7E7E7,0 1px 0 rgba(0,0,0,.08);
+  background: rgb(195, 195, 195);
+}
+
+#pb_output { width: 100%; }

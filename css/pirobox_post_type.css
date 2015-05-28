@@ -1,0 +1,95 @@
+#wp_plugin_template_pirobox-gallery_section table,
+#sortable-gallery-list {
+    width: 100%;
+}
+
+#sortable-gallery-list li {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    position: relative;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+li .imgPrev {
+    max-height: 40px;
+    width: auto; 
+    border-left: 5px solid #e5e5e5;
+    border-right: 5px solid #e5e5e5;
+    margin-left: 40px;
+    float: left; 
+}
+
+
+li .element-detail { 
+    display: none; 
+    padding: 5px 40px;
+}
+
+.map-video-overlay .media-modal-content label,
+li .element-detail label {
+    display: block; 
+}
+
+.map-video-overlay .media-modal-content input,
+li .element-detail textarea,
+li .element-detail input { 
+    margin-left: 15px;
+    min-width: 65%;
+}
+
+.icon:before {
+    font: 400 27px/40px dashicons;
+    speak: none;
+    display: inline-block;
+    padding: 0 8px;
+    top: 0;
+    left: -1px;
+    position: relative;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none!important;
+}
+
+.icon.updown:before { content: '\f156'; }
+.icon.delete:before { content: '\f335'; cursor: pointer; }
+.icon.image:before { content: '\f128'; }
+.icon.video:before { content: '\f126'; }
+.icon.map:before { content: '\f319'; }
+.icon.edit:before { content: '\f464'; font-size: 1.5em; color: #e5e5e5; cursor: pointer;}
+li:hover .icon.edit:before { color: #444;}
+
+.icon.updown,
+.icon.delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: auto;
+}
+
+.icon.updown { 
+    right: auto;
+    left: 0px;
+    right: auto; 
+}
+
+.icon.video,
+.icon.map,
+.icon.image {
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 85px;
+}
+
+.map-video-overlay {
+    position: relative; 
+    display: block;
+}
+.map-video-overlay .media-modal-content { 
+    padding: 16px; 
+}
+.map-video-overlay .media-modal {
+  left: 30%;
+  right: 30%;
+  bottom: auto 
+}
