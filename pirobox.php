@@ -7,8 +7,8 @@
   Author: Diego Valobra & Benedetta Sferrella
   Author URI: http://www.pirolab.it/wp_pirobox/
   Version: 2
+  test: test github
  */
-
 
 if (!class_exists('Pirobox')) {
 
