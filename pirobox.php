@@ -10,7 +10,6 @@
   test: test github
   git command : git pull origin master && git add . --all && git commit -am "fix Diego" && git push origin  master
   
- * ccccccc
  */
 if (!class_exists('Pirobox')) {
 
