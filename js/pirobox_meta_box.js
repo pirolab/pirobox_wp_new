@@ -13,7 +13,7 @@ jQuery(function($) {
         
         if( $('#gallery-form-button').hasClass('selected') ){
             valOBj = {
-                gallery_id : 112,
+                gallery_id : 0,
                 columns: 3,
                 shadow: 'true'
             };
@@ -28,7 +28,7 @@ jQuery(function($) {
              
         } else if( $('#slider-form-button').hasClass('selected') ){
             valOBj = {
-                gallery_id : 112,
+                gallery_id : 0,
                 shadow: 'true',
                 slider_height: 350,
                 speed_animation: 1000,
@@ -62,7 +62,7 @@ jQuery(function($) {
             
         }else{
             valOBj = {
-                gallery_id : 112,
+                gallery_id : 0,
                 shadow: 'true',
                 columns: 3,
                 carousel_height: 220,

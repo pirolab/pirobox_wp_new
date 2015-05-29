@@ -1,5 +1,22 @@
 slider
 <br/>
+
+<script>
+    if( piroboxSlider === undefined  || piroboxSlider === NULL ){
+        var piroboxSlider = {};
+    } 
+    piroboxSlider.<?php echo 'sliderID_45'; ?>  =  {
+                gallery_id : <?php echo $atts['gallery_id'] ?>,
+                shadow: '<?php echo $atts['shadow'] ?>',
+                slider_height: <?php echo $atts['slider_height'] ?>,
+                speed_animation: <?php echo $atts['speed_animation'] ?>,
+                animation_delay: <?php echo $atts['animation_delay'] ?>,
+                control_position: '<?php echo $atts['control_position'] ?>',
+                autoplay: '<?php echo $atts['autoplay'] ?>',
+                pagination: '<?php echo $atts['pagination'] ?>',
+            };
+</script>
+
 <?php
 if( !function_exists ( 'vt_resize' ) ){
     include 'image_resize_custom.php';

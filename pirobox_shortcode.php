@@ -16,6 +16,9 @@ if (!class_exists('Pirobox_Shortcode')) {
             add_shortcode('pirobox_carousel', array(&$this, 'pirobox_carousel'));
 
             add_action('admin_enqueue_scripts', array(&$this, 'admin_enqueue_scripts'));
+            add_action('wp_enqueue_scripts', array(&$this, 'wp_enqueue_scripts'));
+            
+            
             add_action('admin_init', array(&$this, 'admin_init'));
         }
 
@@ -46,9 +49,12 @@ if (!class_exists('Pirobox_Shortcode')) {
         function admin_enqueue_scripts($hook_suffix) {
             wp_enqueue_style('pirobox-metabox-style', plugins_url('/css/pirobox_meta_box.css', __FILE__));
             wp_enqueue_script('pirobox-metabox-script', plugins_url('/js/pirobox_meta_box.js', __FILE__), array(), false, true);
-        }
-
-// END admin_enqueue_scripts($hook_suffix)
+        } // END admin_enqueue_scripts($hook_suffix)
+        
+        function wp_enqueue_scripts($hook_suffix) {
+            // @TODO frontend script + dipendenze
+           wp_enqueue_script('pirobox-frontend', plugins_url('/js/pirobox_frontend.js', __FILE__), array(), false, true);
+        } // END admin_enqueue_scripts($hook_suffix)
 
         public function add_inner_meta_boxes($post) {
             $args = array('post_type' => 'pirobox-gallery');
