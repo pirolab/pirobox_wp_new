@@ -136,8 +136,7 @@ if (!class_exists('Pirobox_Shortcode')) {
 
             $gallery_post = get_post_meta($atts['gallery_id']);
             $style_option = $this->get_pb_options();
-
-
+            
             include(sprintf("%s/templates/pirobox_gallery_shortcode.php", dirname(__FILE__)));
         }
 
@@ -200,10 +199,6 @@ if (!class_exists('Pirobox_Shortcode')) {
             );
 
             return $opt;
-        }
-
-// END public function get_pb_options
-    }
-
-    // END class Pirobox_Shortcode
+        } // END public function get_pb_options 
+    } // END class Pirobox_Shortcode
 } // END if(!class_exists('Pirobox_Shortcode'))

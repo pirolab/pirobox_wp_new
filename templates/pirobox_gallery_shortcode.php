@@ -1,5 +1,12 @@
 gallery
 <br/>
+
+<script> 
+    var oFoo = {};
+    oFoo.option1 = <?php echo $atts['gallery_id'] ?>;    
+</script>
+
+
 <?php
 if( !function_exists ( 'vt_resize' ) ){
     include 'image_resize_custom.php';
