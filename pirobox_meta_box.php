@@ -10,6 +10,8 @@ if (!class_exists('Pirobox_MetaBox')) {
         public function __construct() {
             // register actions
             
+            // @TODO cancellare file o spostare funcs
+            
         } // END public function __construct()
 
       

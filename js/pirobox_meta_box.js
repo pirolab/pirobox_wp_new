@@ -17,7 +17,8 @@ jQuery(function($) {
                 columns: 3,
                 shadow: 'true'
             };
-            stringShortcode = stringShortcode + 'pirobox_gallery gallery_id=112 ';
+            stringShortcode = stringShortcode + 'pirobox_gallery ';
+            stringShortcode = stringShortcode + 'gallery_id=' + $('#pb_gallery_gallery_id').val() + ' ';
             
             if ( $('#pb_gallery_columns').val() != valOBj.columns )                
                 stringShortcode = stringShortcode + 'columns=' + $('#pb_gallery_columns').val() + ' ';
@@ -36,7 +37,9 @@ jQuery(function($) {
                 autoplay: 'true',
                 pagination: 'false'
             };
-            stringShortcode = stringShortcode + 'pirobox_slider gallery_id=112 ';
+            stringShortcode = stringShortcode + 'pirobox_slider ';
+            stringShortcode = stringShortcode + 'gallery_id=' + $('#pb_slider_gallery_id').val() + ' ';
+            
             
             if ( $('#pb_slider_shadow').val() != valOBj.shadow )
                 stringShortcode = stringShortcode + ' shadow=' + $('#pb_slider_shadow').val() + ' ';
@@ -51,15 +54,10 @@ jQuery(function($) {
             if ( $('#pb_slider_autoplay_delay').val() != valOBj.animation_delay )
                 stringShortcode = stringShortcode + ' animation_delay=' + $('#pb_slider_autoplay_delay').val() + ' ';
             
-            /*
-            if ( $('#pb_slider_height').val() != valOBj.control_position ){
-                valOBj.control_position = $('#pb_slider_height').val();
-            
-            */
-            if ( $('#pb_slider_autoplay').val() != valOBj.autoplay )
+           if ( !$('#pb_slider_autoplay').attr('checked') )
                 stringShortcode = stringShortcode + ' autoplay=' + $('#pb_slider_autoplay').val() + ' ';
            
-            if ( $('#pb_slider_pagination').val() != valOBj.pagination )
+            if ( $('#pb_slider_pagination').attr('checked') )
                 stringShortcode = stringShortcode + ' pagination=' + $('#pb_slider_pagination').val() + ' ';
             
         }else{
@@ -75,7 +73,8 @@ jQuery(function($) {
                 pagination: 'false'
             };
             
-            stringShortcode = stringShortcode + 'pirobox_carousel gallery_id=112 ';
+            stringShortcode = stringShortcode + 'pirobox_carousel ';
+            stringShortcode = stringShortcode + 'gallery_id=' + $('#pb_carousel_gallery_id').val() + ' ';
             
             if ( $('#pb_carousel_shadow').val() != valOBj.shadow )
                 stringShortcode = stringShortcode + ' shadow=' + $('#pb_carousel_shadow').val() + ' ';
@@ -93,14 +92,10 @@ jQuery(function($) {
             if ( $('#pb_carousel_autoplay_delay').val() != valOBj.animation_delay )
                 stringShortcode = stringShortcode + ' animation_delay=' + $('#pb_carousel_autoplay_delay').val() + ' ';
            
-            /*
-            if ( $('#pb_carousel_height').val() != valOBj.control_position )
-                valOBj.control_position = $('#pb_carousel_height').val();
-            */
-            if ( $('#pb_carousel_autoplay').val() != valOBj.autoplay )
+            if ( !$('#pb_carousel_autoplay').attr('checked') )
                 stringShortcode = stringShortcode + ' autoplay=' + $('#pb_carousel_autoplay').val() + ' ';
             
-            if ( $('#pb_carousel_pagination').val() != valOBj.pagination )
+            if ( $('#pb_carousel_pagination').attr('checked') )
                 stringShortcode = stringShortcode + ' pagination=' + $('#pb_carousel_pagination').val() + ' ';
             
         }    
