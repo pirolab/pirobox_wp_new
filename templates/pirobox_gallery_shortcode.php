@@ -5,7 +5,7 @@ gallery
     if( piroboxGallery === undefined  || piroboxGallery === NULL ){
         var piroboxGallery = {};
     } 
-    piroboxGallery.<?php echo 'galleryID_45'; ?>  =  {
+    piroboxGallery.<?php echo 'pb_gallery_'.get_the_ID().'_'.$atts['gallery_id']; ?>  =  {
                 gallery_id : <?php echo $atts['gallery_id'] ?>,
                 columns: <?php echo $atts['columns'] ?>,
                 shadow: '<?php echo $atts['shadow'] ?>'

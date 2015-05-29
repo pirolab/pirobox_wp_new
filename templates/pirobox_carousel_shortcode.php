@@ -2,10 +2,10 @@ carousel
 <br/>
 
 <script>
-    if( piroboxCarousel === undefined  || piroboxCarousel === NULL ){
+    if( piroboxCarousel === undefined  || piroboxCarousel === null ){
         var piroboxCarousel = {};
     } 
-    piroboxCarousel.<?php echo 'carouselID_45'; ?>  =  {
+    piroboxCarousel.<?php echo 'pb_carousel_'.get_the_ID().'_'.$atts['gallery_id']; ?>  =  {
                 gallery_id : <?php echo $atts['gallery_id'] ?>,
                 shadow: '<?php echo $atts['shadow'] ?>',
                 columns: <?php echo $atts['columns'] ?>,

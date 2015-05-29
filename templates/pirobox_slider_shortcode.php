@@ -5,7 +5,7 @@ slider
     if( piroboxSlider === undefined  || piroboxSlider === NULL ){
         var piroboxSlider = {};
     } 
-    piroboxSlider.<?php echo 'sliderID_45'; ?>  =  {
+    piroboxSlider.<?php echo 'pb_slider_'.get_the_ID().'_'.$atts['gallery_id']; ?>  =  {
                 gallery_id : <?php echo $atts['gallery_id'] ?>,
                 shadow: '<?php echo $atts['shadow'] ?>',
                 slider_height: <?php echo $atts['slider_height'] ?>,
